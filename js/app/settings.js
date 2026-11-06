@@ -1,0 +1,25 @@
+export const settings = Object.freeze({
+  api: 'https://opentdb.com/api.php',
+  clock: 15,
+  hurryAt: 5,
+  pauseAfterAnswer: 1000,
+  leaveDuration: 500,
+  bounds: Object.freeze({ min: 1, max: 50, fallback: 10 }),
+  defaultDifficulty: 'easy',
+  guestName: 'Player',
+  recordsKey: 'qm.records.v1',
+  recordLimit: 10,
+  keys: Object.freeze(['1', '2', '3', '4']),
+  faults: Object.freeze({
+    1: 'Not enough questions available for your criteria. Try reducing the number or changing category.',
+    2: 'Invalid parameter in request.',
+    3: 'Session token not found.',
+    4: 'Session token exhausted. Please try again.',
+    5: 'Too many requests. Please wait a few seconds and try again.',
+  }),
+  marks: Object.freeze({
+    easy: 'fa-face-smile',
+    medium: 'fa-face-meh',
+    hard: 'fa-skull',
+  }),
+});
